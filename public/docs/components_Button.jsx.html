@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: components/Button.jsx</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,39 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: components/Button.jsx</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * A simple button component.
+ *
+ * @component
+ * @param {Object} props - The component accepts text and onClick as props
+ * @param {string} props.text - The text to be display on the button
+ * @param {function} props.onClick - The click event handler.
+ * @returns {JSX.Element} The rendered button component.
+ *
+ * @example
+ * // Render a button with the text "Click Me"
+ * &lt;Button text="Click Me" onClick={() => console.log('Button clicked!')} />
+ */
+function Button({ text, onClick }) {
+  return (
+    &lt;button className='myButton' onClick={onClick}>
+      {text}
+    &lt;/button>
+  );
+}
 
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default Button;</code></pre>
+        </article>
+    </section>
 
 
 
