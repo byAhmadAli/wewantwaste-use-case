@@ -4,7 +4,7 @@ import axios from 'axios';
  * Axios instance configured for API requests.
  *
  * @constant
- * @type {import('axios').AxiosInstance}
+ * @type {AxiosInstance}
  * @property {string} baseURL - The base URL for API requests, taken from environment variable `VITE_API_BASE_URL` or defaults to 'https://app.wewantwaste.co.uk/api'.
  * @property {number} timeout - The request timeout in milliseconds (default: 10000).
  * @property {Object} headers - Default headers for all requests, including 'Content-Type: application/json'.

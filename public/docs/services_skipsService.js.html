@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: services/skipsService.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,31 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: services/skipsService.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import apiClient from './apiClient';
 
+/**
+ * Retrieves skip information based on the provided postcode and area.
+ *
+ * @param {string} postcode - The postcode to search skips for.
+ * @param {string} area - The area to search skips in.
+ * @returns {Promise&lt;Object>} A promise that resolves to the skip data for the specified location.
+ */
+export const getSkipByLocation = (postcode, area) => {
+    const params = new URLSearchParams({ postcode, area });
 
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+    return apiClient.get(`/skips/by-location?${params.toString()}`);
+};</code></pre>
+        </article>
+    </section>
 
 
 
