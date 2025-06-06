@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Button from './components/Button'
+import SkipsByLocation from './components/SkipsByLocation'
 
 
 function App() {
@@ -32,6 +33,8 @@ function App() {
       </p>
 
       <Button text="Add +1 to counter" onClick={() => setCount((count) => count + 1)} />
+
+      <SkipsByLocation postcode='NR32' area='Lowestoft' />
     </>
   )
 }
