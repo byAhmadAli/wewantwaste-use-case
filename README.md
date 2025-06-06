@@ -1,12 +1,28 @@
-# React + Vite
+# Select Skip – Choose Your Skip Size  
+*A feature of WeWantWaste.co.uk built with React + Vite*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This component powers the **"Select Skip"** step on [WeWantWaste.co.uk](https://wewantwaste.co.uk), allowing users to choose the appropriate skip size for their waste removal needs.
 
-Currently, two official plugins are available:
+## 🔧 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React** – for building a responsive and interactive skip selection UI
+- ⚡ **Vite** – for fast bundling, HMR, and lightning-quick development
+- 📝 **JSDoc** – used to document all components and logic
+- 📄 Documentation is auto-generated and available at:  
+  👉 **`{your-domain}/docs/index.html`**
 
-## Expanding the ESLint configuration
+## 📁 Usage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This feature allows users to:
+- View available skip sizes (mini, midi, builder, etc.)
+- See pricing and descriptions for each size
+- Select a skip and proceed to the next booking step
+
+## 📜 Scripts
+
+| Command            | Description                                  |
+|--------------------|----------------------------------------------|
+| `npm run dev`      | Starts the development server with Vite      |
+| `npm run build`    | Builds the app for production                |
+| `npm run preview`  | Previews the production build                |
+| `npm run docs`     | Generates documentation using JSDoc          |
