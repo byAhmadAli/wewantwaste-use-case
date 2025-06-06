@@ -66,3 +66,7 @@ This project uses environment variables to configure API endpoints and other run
   ```bash
   const baseUrl = import.meta.env.VITE_API_BASE_URL;
   ```
+
+## 🎨 Styling with Tailwind CSS
+
+This project uses **Tailwind CSS** with the official [`@tailwindcss/vite`](https://www.npmjs.com/package/@tailwindcss/vite) plugin for zero-config, utility-first styling.

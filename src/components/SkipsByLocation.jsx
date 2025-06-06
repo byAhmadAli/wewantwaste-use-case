@@ -18,21 +18,35 @@ const SkipsByLocation = ({ postcode, area }) => {
     if (error) return <p>Error loading skips</p>;
 
     return (
-        <div>
-            <h2>Skips By Location</h2>
+        <div className="p-6 bg-white rounded shadow">
+            <h2 className="text-2xl font-bold mb-4">Skips By Location</h2>
             {(!skips || skips.length === 0) ? (
-                <p>No skips available for any location.</p>
+                <p className="text-gray-500">No skips available for any location.</p>
             ) : (
-                <ul>
+                <ul className="space-y-4">
                     {skips.map((skip) => (
-                        <li key={skip.id}>
-                            <strong>Postcode:</strong> {skip.postcode} <br />
-                            <strong>Size:</strong> {skip.size} yd³ <br />
-                            <strong>Hire Period:</strong> {skip.hire_period_days} days <br />
-                            <strong>Price (before VAT):</strong> £{skip.price_before_vat} <br />
-                            <strong>VAT:</strong> {skip.vat}% <br />
-                            <strong>Allowed on Road:</strong> {skip.allowed_on_road ? "Yes" : "No"} <br />
-                            <strong>Allows Heavy Waste:</strong> {skip.allows_heavy_waste ? "Yes" : "No"}
+                        <li key={skip.id} className="border rounded p-4 bg-gray-50">
+                            <div className="mb-1">
+                                <span className="font-semibold">Postcode:</span> {skip.postcode}
+                            </div>
+                            <div className="mb-1">
+                                <span className="font-semibold">Size:</span> {skip.size} yd³
+                            </div>
+                            <div className="mb-1">
+                                <span className="font-semibold">Hire Period:</span> {skip.hire_period_days} days
+                            </div>
+                            <div className="mb-1">
+                                <span className="font-semibold">Price (before VAT):</span> £{skip.price_before_vat}
+                            </div>
+                            <div className="mb-1">
+                                <span className="font-semibold">VAT:</span> {skip.vat}%
+                            </div>
+                            <div className="mb-1">
+                                <span className="font-semibold">Allowed on Road:</span> {skip.allowed_on_road ? "Yes" : "No"}
+                            </div>
+                            <div>
+                                <span className="font-semibold">Allows Heavy Waste:</span> {skip.allows_heavy_waste ? "Yes" : "No"}
+                            </div>
                         </li>
                     ))}
                 </ul>
