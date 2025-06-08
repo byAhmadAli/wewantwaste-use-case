@@ -1,0 +1,18 @@
+.slider::-webkit-slider-thumb {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #0037C1; /* tailwind blue-500 */
+  border-radius: 9999px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  appearance: none;
+  margin-top: -12px;
+}
+
+.slider::-moz-range-thumb {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #0037C1;
+  border-radius: 9999px;
+  border: none;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
